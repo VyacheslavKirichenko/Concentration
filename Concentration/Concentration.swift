@@ -1,9 +1,3 @@
-//
-//  Concentration.swift
-//
-//  Created by CS193p Instructor  on 09/25/17.
-//  Copyright © 2017 Stanford University. All rights reserved.
-//
 
 import Foundation
 
@@ -53,7 +47,7 @@ class Concentration {
                     // Increase the score
                     score += Points.matchBonus
                 } else {
-    //cards didn't match - Penalize
+    //cards didn't match 
                     if seenCards.contains(index) {
                         score -= Points.missMatchPenalty
                     }
@@ -89,24 +83,9 @@ class Concentration {
 			let card = Card()
 			cards += [card, card]
 		}
-	// Shuffle the cards
-    // For Swift 4.2 better use native shuffle() for sequences
         cards.shuffle()
 	}
 }
 
-/* extension Array {
-    /// тасование элементов  `self` "по месту".
-    mutating func shuffle() {
-        // пустая коллекция и с одним элементом не тасуются
-        if count < 2 { return }
-        
-        for i in indices.dropLast() {
-            let diff = distance(from: i, to: endIndex)
-            let j = index(i, offsetBy: diff.arc4random)
-            swapAt(i, j)
-        }
-    }
-}
- */
+
 

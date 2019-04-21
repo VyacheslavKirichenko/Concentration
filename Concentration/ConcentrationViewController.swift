@@ -1,9 +1,3 @@
-//  ViewController.swift
-//  Concentration
-//
-//  Created by CS193p Instructor  on 09/25/17.
-//  Copyright © 2017 Stanford University. All rights reserved.
-//
 
 import UIKit
 
